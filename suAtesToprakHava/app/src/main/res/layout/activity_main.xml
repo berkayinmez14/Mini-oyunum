@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7986CB"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bilgisayar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="#03A9F4"
+            android:textSize="60sp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/kullanici"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="#FFEB3B"
+            android:textSize="60sp"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bilsec"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Bilgisayarın seçimi"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/kazanan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Kazanan"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/hava"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/hava"
+            android:onClick="bas"
+            android:scaleType="fitXY"
+             />
+
+        <ImageButton
+            android:id="@+id/su"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/su"
+            android:onClick="bas"
+            android:scaleType="fitXY"
+            />
+
+        <ImageButton
+            android:id="@+id/toprak"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/toprak"
+            android:onClick="bas"
+            android:scaleType="fitXY"
+             />
+
+        <ImageButton
+            android:id="@+id/ates"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:src="@drawable/fire"
+            android:onClick="bas"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+</LinearLayout>
